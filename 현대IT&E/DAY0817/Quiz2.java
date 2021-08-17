@@ -27,8 +27,12 @@ public class Quiz2 {
 			}//isOdd
 		}//for
 		
-		System.out.println(sum);
-		System.out.println(min);
+		if(findOdd) {
+			System.out.println(sum);
+			System.out.println(min);
+		} else {
+			System.out.println(-1);
+		}
 
 	}
 

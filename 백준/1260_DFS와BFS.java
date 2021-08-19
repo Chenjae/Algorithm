@@ -31,13 +31,13 @@ public class Main {
 			grape[e][s] = 1;
 		}
 
-		// 1. DFS : 表捞 快急 沤祸
+		// 1. DFS : 旯婌澊 鞖办劆 韮愳儔
 		// Stack
 		dfs(v);
 		System.out.println();
 		visited = new boolean[n + 1];
 
-		// 2. BFS : 承捞 快急 沤祸
+		// 2. BFS : 雱撿澊 鞖办劆 韮愳儔
 		// Queue
 		bfs(v);
 

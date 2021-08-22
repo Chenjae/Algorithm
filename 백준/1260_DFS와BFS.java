@@ -6,6 +6,8 @@ import java.util.LinkedList;
 import java.util.StringTokenizer;
 
 public class Main {
+	//1260번 DFS와 BFS
+	//https://www.acmicpc.net/problem/1260
 	public static LinkedList<Integer> queue = new LinkedList();
 	public static boolean[] visited;
 	public static int[][] grape;

@@ -1,0 +1,43 @@
+package report.day0821;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.LinkedList;
+import java.util.StringTokenizer;
+
+public class Quiz1 {
+	//1182번 부분수열의 합
+	//https://www.acmicpc.net/problem/1182
+	static int n;
+	static int s;
+	static int[] list;
+	static boolean[] visited;
+	static int count= 0;
+	
+	public static void dfs(int sum, int depth, int gong) {
+		if(depth == n) {
+			if(sum == s && gong != n) count++;
+			return;
+		}
+		dfs(sum+list[depth], depth+1, gong);
+		dfs(sum,depth+1, gong+1);
+	}
+	
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		
+		StringTokenizer st = new StringTokenizer(br.readLine());
+		n = Integer.parseInt(st.nextToken());
+		s = Integer.parseInt(st.nextToken());
+		list = new int[n];
+		visited = new boolean[n];
+		st = new StringTokenizer(br.readLine());
+		for(int i=0; i<n; i++) {
+			list[i] = Integer.parseInt(st.nextToken());
+		}
+		
+		dfs(0,0,0);
+		System.out.println(count);
+	}
+}

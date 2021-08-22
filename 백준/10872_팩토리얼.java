@@ -11,7 +11,6 @@ public class Main {
 		while(num>0) {
 			result *= num--;
 		}
-		
 		System.out.println(result);
 	}
 }

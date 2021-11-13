@@ -36,7 +36,6 @@ class Solution {
         for(int i=1; i<=N; i++) {
             if(map[1][i] <= K) answer++;
         }
-        
         return answer;
     }
 }

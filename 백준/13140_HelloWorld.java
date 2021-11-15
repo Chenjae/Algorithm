@@ -39,12 +39,10 @@ public class Main {
 		if (num[2] == 0 || num[6] == 0) {
 			return false;
 		}
-		
 		if ((num[0] + num[1] * 1000 + num[2] * 10000 + num[3] * 2 * 10 + num[3] * 100 + num[4] + num[4] * 1000
 				+ num[5] * 100 + num[6] * 10000) != N) {
 			return false;
 		}
-
 		return true;
 	}
 	

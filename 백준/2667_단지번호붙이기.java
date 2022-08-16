@@ -69,5 +69,4 @@ public class Main {
 		if(x<0 || y<0 || x>=N || y>=N || map[x][y]==0 || visited[x][y]) return false;
 		return true;
 	}
-
 }
